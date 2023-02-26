@@ -1,0 +1,116 @@
+
+.slider {
+    display: flex;            /* дочерние элементы в одной строке */
+    justify-content: center;  /* gorizontal aligment*/
+    align-items: center;      /* vertical aligment*/
+    overflow-x: auto;         /* горизонтальная прокрутка */
+    scroll-behavior: smooth;  /* плавная прокрутка при переключении слайдов */
+  }
+  
+  .slide {
+    flex: 0 0 auto;           /* чтобы ширина элементов не менялась */
+    width: 700px;
+    height: 500px;
+    margin-right: 15px;       /* отступ */
+    margin-left: 15px;        /* отступ */
+    outline: 5px solid rgb(27, 26, 26); /* обводим контур*/
+    font-weight: bold;                    /* обводим контур*/
+    border-radius: 10px;      /* сгладить углы */
+
+
+    box-shadow: 0 0 50px #5545e9; /* тень */
+    animation: blink 1.0s linear 1; /* мигание при переключении, linear 1 - 1 раз*/
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+
+  .slideLeft {
+    flex: 0 0 auto;           /* чтобы ширина элементов не менялась */
+    width: 500px;
+    height: 300px;
+    margin-left: 0;
+    outline: 3px solid rgb(52, 2, 117); /* обводим контур*/
+    font-weight: bold;                    /* обводим контур*/
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+  }
+
+  .slideRight {
+    flex: 0 0 auto;            /* чтобы ширина элементов не менялась */
+    width: 500px;
+    height: 300px;
+    margin-right: 0;
+    outline: 3px solid rgb(52, 2, 117); /* обводим контур*/
+    font-weight: bold;                    /* обводим контур*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /* Трясем элемент при наведении */
+.slide:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+
+.slideRight:hover {
+    animation: 0.8s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+.slideLeft:hover {
+    animation: 0.8s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+
+.buttons {
+    display: flex;         
+    justify-content: center;   
+
+}
+
+.buttons p {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #a9ccf1;
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .buttons p:hover {
+    background-color: #0062cc;
+  }
