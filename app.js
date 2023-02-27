@@ -36,9 +36,11 @@ function fnNext() {
     }
 }
 
+//get div with photos
+const customDiv = document.getElementById("main-view")
+    
 // screen builder handler
 function getPicture() {
-    const customDiv = document.getElementById("main-view")
     customDiv.innerHTML = `
     <p><img class="slideRight" src="asset/${picArray[fileName]}" alt="picture"></p>
     <p><img class="slide" src="asset/${picArray[fileName+1]}" alt="picture"></p>
