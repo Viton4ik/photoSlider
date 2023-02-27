@@ -5,18 +5,20 @@ const picArray = ['403.webp', '403_1.png', '403_2.gif', '404_1.jpg', '404_2.png'
 
 let fileName = 0 // first element
 
+// get buttons
+const btnPrevious = document.getElementById('btnPrevious')
+const btnNext = document.getElementById('btnNext')
+
 // handler for button "Previous"
 function fnPreviuos() {
     // deactivate button "Previous" if first element
     if (fileName === 0) {
-        const btnPrevious = document.getElementById('btnPrevious');
         btnPrevious.disabled = true;  
     }
     else {
         fileName -= 1
         getPicture()
         // activate button "Next"
-        const btnNext = document.getElementById('btnNext');
         btnNext.disabled = false;  
     }
 }
@@ -24,14 +26,12 @@ function fnPreviuos() {
 function fnNext() {
     // deactivate button "Next" if last element
     if (fileName === picArray.length-3) {
-        const btnNext = document.getElementById('btnNext');
         btnNext.disabled = true;  
     }
     else {
         fileName += 1
         getPicture()
         // activate button "Previous"
-        const btnPrevious = document.getElementById('btnPrevious');
         btnPrevious.disabled = false;  
     }
 }
