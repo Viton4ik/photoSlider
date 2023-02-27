@@ -5,6 +5,7 @@
     align-items: center;      /* vertical aligment*/
     overflow-x: auto;         /* горизонтальная прокрутка */
     scroll-behavior: smooth;  /* плавная прокрутка при переключении слайдов */
+    background-color: rgb(183, 223, 241);
   }
   
   .slide {
