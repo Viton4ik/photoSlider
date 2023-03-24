@@ -1,13 +1,20 @@
 ## _Photo Slider Application_
 
-### Реализуем слайдер для фото.
+### Features
 
-_Общие требования:_
+_General requirements:_
 
-> - Должна быть возможность пролистывать фото. 
-> - Добавить 2 кнопки вперед и назад (предыдущее, следующее и так далее).
-> - Блок, в котором располагаются изображения, не должен меняться под размер картинок.
-> - Добавить анимацию при переключении фото.
-> - На входе — массив изображений. Их может быть любое количество. 
-> - Картинки можно положить в папку asset. Либо использовать стороннее API, сделав GET-запрос для получения изображений.
-> - Дизайн произвольный. Минимум — застилизовать кнопки (добавить hover).
+> - It should be possible to scroll through the photo.
+> - 2 buttons: forward and backward  (previous, next and so on).
+> - A block needed in which the images are located should not change according to the size of the images.
+> - Add animation when switching photo.
+> - The input is an array of images. There can be any number of them.
+> - Pictures can be put in the asset folder. Or use a third-party API by making a GET request to get images.
+> - The design is arbitrary. The minimum is to style the buttons (add a hover).
+
+
+
+
+
+
+
